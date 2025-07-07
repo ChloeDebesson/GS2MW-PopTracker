@@ -24,6 +24,7 @@ ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlus.lua")
 ScriptHost:LoadScript("scripts/custom_items/progressiveTogglePlusWrapper.lua")
 
 -- Items
+Tracker:AddItems("items/settings.jsonc")
 Tracker:AddItems("items/items.jsonc")
 Tracker:AddItems("items/djinn.jsonc")
 Tracker:AddItems("items/progression.jsonc")

@@ -3,6 +3,7 @@
   {
     "name": "weyard",
     "img": "images/maps/weyard.jpg",
-    "location_size": 80
+    "location_size": 80,
+    "location_border_thickness": 4
   }
 ]

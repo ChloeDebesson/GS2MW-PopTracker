@@ -20,6 +20,12 @@
               "header_background": "#302919",
               "background": "#33000000",
               "dock": "top",
+              "header_content": {
+                "type": "button_popup",
+                "style": "settings",
+                "popup_background": "#55212121",
+                "layout": "settings_popup"
+              },
               "content": {
                 "type": "layout",
                 "key": "tracker_items"
@@ -64,7 +70,7 @@
           "type": "map",
           "v_alignment": "center",
           "maps": [
-            "map"
+            "weyard"
           ]
         }
       ]
