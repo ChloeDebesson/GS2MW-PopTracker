@@ -1,0 +1,8 @@
+[
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#maps
+  {
+    "name": "weyard",
+    "img": "images/maps/weyard.jpg",
+    "location_size": 80
+  }
+]

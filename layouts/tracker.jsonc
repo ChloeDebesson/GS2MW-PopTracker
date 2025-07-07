@@ -1,0 +1,73 @@
+{
+  //sets the trackers layout
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#layouts
+  "tracker_default": {
+    "type": "container",
+    "background": "#877857",
+    "content": {
+      "type": "dock",
+      "dropshadow": false,
+      "content": [
+        {
+          "type": "dock",
+          "dropshadow": true,
+          "dock": "left",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "header_background": "#302919",
+              "background": "#33000000",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "tracker_items"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Psynergy",
+              "header_background": "#302919",
+              "background": "#33000000",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "tracker_psynergy"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Summons & Djinn",
+              "header_background": "#302919",
+              "background": "#33000000",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "tracker_summons_and_djinn"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Progression",
+              "header_background": "#302919",
+              "background": "#33000000",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "tracker_progression"
+              }
+            }
+          ]
+        },
+        {
+          "type": "map",
+          "v_alignment": "center",
+          "maps": [
+            "map"
+          ]
+        }
+      ]
+    }
+  }
+}
