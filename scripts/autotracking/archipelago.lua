@@ -72,44 +72,6 @@ end
 function onClear(slot_data)
     --SLOT_DATA = slot_data
     CUR_INDEX = -1
-    -- reset locations
-    for _, location_array in pairs(LOCATION_MAPPING) do
-        for _, location in pairs(location_array) do
-            if location then
-                local location_obj = Tracker:FindObjectForCode(location)
-                if location_obj then
-                    if location:sub(1, 1) == "@" then
-                        location_obj.AvailableChestCount = location_obj.ChestCount
-                    else
-                        location_obj.Active = false
-                    end
-                end
-            end
-        end
-    end
-    -- reset items
-    for _, item_pair in pairs(ITEM_MAPPING) do
-        for item_type, item_code in pairs(item_pair) do
-            local item_obj = Tracker:FindObjectForCode(item_code)
-            if item_obj then
-                if item_obj.Type == "toggle" then
-                    item_obj.Active = false
-                elseif item_obj.Type == "progressive" then
-                    item_obj.CurrentStage = 0
-                    item_obj.Active = false
-                elseif item_obj.Type == "consumable" then
-                    if item_obj.MinCount then
-                        item_obj.AcquiredCount = item_obj.MinCount
-                    else
-                        item_obj.AcquiredCount = 0
-                    end
-                elseif item_obj.Type == "progressive_toggle" then
-                    item_obj.CurrentStage = 0
-                    item_obj.Active = false
-                end
-            end
-        end
-    end
     PLAYER_ID = Archipelago.PlayerNumber or -1
     TEAM_NUMBER = Archipelago.TeamNumber or 0
     SLOT_DATA = slot_data
